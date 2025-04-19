@@ -4,6 +4,9 @@ origin_url: https://www.youtube.com/watch?v=kXuRJXEzrE0
 date: 2025-04-19T14:05:56.983Z
 ---
 
+[![Watch the video](https://img.youtube.com/vi/kXuRJXEzrE0/0.jpg)](https://www.youtube.com/watch?v=kXuRJXEzrE0)
+
+
 This tutorial walks you through building a Model Context Protocol (MCP) server from scratch using TypeScript that integrates with real APIs. You'll learn how to create a practical MCP server that fetches EigenLayer AVS metadata from the Eigen Explorer API and processes it using Claude.
 The video covers:
 
