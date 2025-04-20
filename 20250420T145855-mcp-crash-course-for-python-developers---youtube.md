@@ -6,6 +6,9 @@ date: 2025-04-20T14:58:55.764Z
 
 # Model Context Protocol (MCP) for Python Developers
 
+[![Watch on YouTube](https://img.youtube.com/vi/5xqFjh56AwM/0.jpg)](https://www.youtube.com/watch?v=5xqFjh56AwM)
+
+
 ## 📚 Additional Resources
 - **Just getting started?** Learn the fundamentals of AI: [Skool - Data Alchemy](https://www.skool.com/data-alchemy)  
 - **Already building AI apps?** Get our production framework: [Launchpad by Data Lumina](https://launchpad.datalumina.com/?utm...)  
