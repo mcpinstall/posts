@@ -30,6 +30,9 @@ Another key trend is a **shift in how search is used** in the enterprise. Tradit
 - **Generative AI assistants underperform without unified enterprise search:** RAG-based AI assistants and agents struggle to scale across all enterprise data.
 - **Unmanaged content leads to ROT (redundant, obsolete, trivial) data:** Content repositories are rarely governed, producing abundant ROT content instead of APT information.
 
+<img width="699" alt="image" src="https://github.com/user-attachments/assets/2d97096d-ec31-46a2-a748-911d2de6c91f" />
+
+
 ## Analysis
 
 ### Automate Information Delivery for Insight
