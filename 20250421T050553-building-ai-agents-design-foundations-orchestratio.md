@@ -2,6 +2,10 @@
 title: Building AI Agents: Design Foundations, Orchestration Patterns, and Guardrails
 date: 2025-04-21T05:05:53.326Z
 ---
+This is the article analyzing the OpenAI's new whitepaper "A practical guide to building agents", you can download the PDF file here: [https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
+
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/4113eee0-7f17-4510-b554-7dc81b9fa01c" />
+
 
 # Building AI Agents: Design Foundations, Orchestration Patterns, and Guardrails
 
