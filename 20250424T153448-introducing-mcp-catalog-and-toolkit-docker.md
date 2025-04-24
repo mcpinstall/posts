@@ -6,6 +6,9 @@ date: 2025-04-24T15:34:54.002Z
 
 # Dockerizing MCP – Bringing Discovery, Simplicity, and Trust to the Ecosystem
 
+![Docker Evergreen Logo](https://www.docker.com/app/uploads/2024/12/1300x1300_docker-evergreen_logo_blog_C-1.png)
+
+
 AI agents are moving fast—from labs to real-world apps. And as they go from generating text to taking real action, the Model Context Protocol (MCP) has emerged as the de facto standard for connecting agents to tools.
 
 MCP is exciting. It’s simple, modular, and built on web-native principles. We believe it has the potential to do for agentic AI interaction what containers did for app deployment – **standardize and simplify** a complex, fragmented landscape.
