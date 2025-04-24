@@ -6,24 +6,6 @@ date: 2025-04-24T04:09:51.721Z
 
 # A Deep Dive Into MCP and the Future of AI Tooling
 
-[Yoko Li](https://a16z.com/author/yoko-li/)
-
-[share](#)
-
-*   [Copy Link](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [Email](mailto:?subject=A%20Deep%20Dive%20Into%20MCP%20and%20the%20Future%20of%20AI%20Tooling&body=https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [X](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [LinkedIn](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [Facebook](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [Hacker News](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [WhatsApp](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [Flipboard](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-*   [Reddit](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
-
-[Table of Contents](#)
-
-**Table of Contents**
-
 Posted March 20, 2025
 
 Since OpenAI released function calling in 2023, I’ve been thinking about what it would take to unlock an ecosystem of agent and tool use. As the foundational models get more intelligent, agents’ ability to interact with external tools, data, and APIs becomes increasingly fragmented: Developers need to implement agents with special business logic for every single system the agent operates in and integrates with. 
@@ -40,15 +22,18 @@ What is MCP?
 
 **MCP is an open protocol that allows systems to provide context to AI models in a manner that’s generalizable across integrations.** The protocol defines how the AI model can call external tools, fetch data, and interact with services. As a concrete example, below is how the Resend MCP server works with multiple MCP clients. 
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-Example-MCP-x2000.png)
+![image](https://github.com/user-attachments/assets/bc49d12f-06d0-4621-9991-4b6835719d5b)
+
 
 The idea is not new; MCP [took inspiration from the LSP (Language Server Protocol)](https://spec.modelcontextprotocol.io/specification/2024-11-05/#:~:text=MCP%20takes%20some%20inspiration%20from,the%20ecosystem%20of%20AI%20applications). In LSP, when a user types in an editor, the client queries the language server to autocomplete suggestions or diagnostics.
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250314-LSP-x2000.png)
+![image](https://github.com/user-attachments/assets/a98cbcf9-dbfd-441d-a751-efdbfae4e2b2)
+
 
 Where MCP extends beyond LSP is in its agent-centric execution model: LSP is mostly reactive (responding to requests from an IDE based on user input), whereas MCP is designed to support autonomous AI workflows. Based on the context, **AI agents can decide which tools to use, in what order, and how to chain them together to accomplish a task.** MCP also introduced a human-in-the-loop capabilities for humans to provide additional data and approve execution. 
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-x2000.png)
+![image](https://github.com/user-attachments/assets/aff08a08-c6e6-40b6-ac24-fd24bb9b1494)
+
 
 ## Popular use cases today 
 
@@ -64,7 +49,8 @@ For developers who live and breathe in code every day, a common sentiment is, �
 
 Instead of switching to Supabase to check on the database status, developers can now use the [Postgres MCP server](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) to execute read-only SQL commands and the [Upstash MCP server](https://github.com/upstash/mcp-server) to create and manage cache indices right from their IDE. When iterating on code, developers can also leverage the [Browsertools MCP](https://github.com/AgentDeskAI/browser-tools-mcp) to give coding agents access to a live environment for feedback and debugging. 
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image1.png)
+![image](https://github.com/user-attachments/assets/bb080825-e1fb-4d38-a421-311b696eb57a)
+
 
 _An example of how Cursor agent uses Browsertools to get access to console logs and other real-time data and debug more efficiently._
 
@@ -78,19 +64,22 @@ The design of an MCP client and the specific interactions it supports plays a cr
 
 One example of this is how Highlight implemented the [@ command](https://x.com/PimDeWitte/status/1899829221813334449) to invoke any MCP servers on its client. The result is a new UX pattern in which the MCP client can pipe generated content into any downstream app of choice. 
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/Notion-screenshot.png)
+![image](https://github.com/user-attachments/assets/81e1dc08-35e8-4ec7-94b7-f907a2f003c1)
+
 
 _An example of Highlight’s implementation of Notion MCP (plugin)._
 
 Another example is the [Blender MCP server](https://x.com/sidahuj/status/1901632110395265452) use case: Now, amateur users who barely know Blender can use natural language to describe the model they want to build. We are seeing the text-to-3D workflow playing out in real time as the community implements servers for other tools like Unity and Unreal engine. 
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image7.png)
+![image](https://github.com/user-attachments/assets/46c04066-22aa-4deb-b592-b8aa6bd96bf8)
+
 
 _An example of using Claude Desktop with [Blender MCP server](https://github.com/ahujasid/blender-mcp)._
 
 Although we mostly think about servers and clients, the MCP ecosystem is gradually shaping up as the protocol evolves. This market map covers the most active areas today, although there are still many blank spaces. Knowing MCP is still in the early days, _we’re excited to add more players to the map as the market evolves and matures._ (And we will explore some of these future possibilities in the next section.)
 
-[!](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-Market-Map-v2-x2000.png)
+![image](https://github.com/user-attachments/assets/8ab04941-2cff-47f9-8444-6210f2d4abc4)
+
 
 On the MCP client side, **most of the high-quality clients we see today are coding-centric**. This is not surprising, since developers are usually early adopters of new technology, but, as the protocol matures, we expect to see more business-centric clients. 
 
@@ -167,98 +156,3 @@ MCP is already reshaping the AI-agent ecosystem, but the next wave of progress w
 If adopted widely, MCPs can represent a shift in how tools are built, consumed, and monetized. We are excited to see where the market takes them. This year will be pivotal: Will we see the rise of a unified MCP marketplace? Will authentication become seamless for AI agents? Can multi-step execution be formalized into the protocol?
 
 If you are building in this space or have thoughts on how the space evolves, please reach out to yli@a16z.com. It’s time to build! 
-
-### Stay up to date on the latest from a16z Infra team
-
- for our a16z newsletter to get analysis and news covering the latest trends reshaping AI and infrastructure.
-
-###### Thanks for signing up.
-
-Check your inbox for a welcome note.
-
-[MANAGE MY SUBSCRIPTIONS](https://info.a16z.com/Manage-Subscription.html) By clicking the Subscribe button, you agree to the [Privacy Policy](https://a16z.com/terms-of-use-privacy/).
-
-**Contributor**
-
-*   [
-    
-    !
-    
-    !
-    
-    **Yoko Li** is a partner at Andreessen Horowitz, where she focuses on enterprise and infrastructure.
-    
-    
-    
-    ](https://a16z.com/author/yoko-li/)
-    *   Follow
-    *   [X](https://twitter.com/stuffyokodraws)
-    *   [Linkedin](https://www.linkedin.com/in/yokoli/)
-
-**More From this Contributor**
-
-*   [**Automating Developer Email with MCP and Al Agents** Zeno Rocha and Yoko Li](https://a16z.com/podcast/automating-developer-email-with-mcp-and-al-agents/)
-*   [**From Prompt to Product: The Rise of AI-Powered Web App Builders** Justine Moore, Yoko Li, Gabriel Vasquez, Marco Mascorro, and Bryan Kim](https://a16z.com/ai-web-app-builders/)
-*   [**Investing in Stainless** Jennifer Li and Yoko Li](https://a16z.com/announcement/investing-in-stainless/)
-*   [**Investing in Resend** Yoko Li, Jennifer Li, and Martin Casado](https://a16z.com/announcement/investing-in-resend/)
-*   [**Investing in Mintlify** Jennifer Li and Yoko Li](https://a16z.com/announcement/investing-in-mintlify/)
-
-The views expressed here are those of the individual AH Capital Management, L.L.C. (“a16z”) personnel quoted and are not the views of a16z or its affiliates. Certain information contained in here has been obtained from third-party sources, including from portfolio companies of funds managed by a16z. While taken from sources believed to be reliable, a16z has not independently verified such information and makes no representations about the enduring accuracy of the information or its appropriateness for a given situation. In addition, this content may include third-party advertisements; a16z has not reviewed such advertisements and does not endorse any advertising content contained therein.
-
-This content is provided for informational purposes only, and should not be relied upon as legal, business, investment, or tax advice. You should consult your own advisers as to those matters. References to any securities or digital assets are for illustrative purposes only, and do not constitute an investment recommendation or offer to provide investment advisory services. Furthermore, this content is not directed at nor intended for use by any investors or prospective investors, and may not under any circumstances be relied upon when making a decision to invest in any fund managed by a16z. (An offering to invest in an a16z fund will be made only by the private placement memorandum, subscription agreement, and other relevant documentation of any such fund and should be read in their entirety.) Any investments or portfolio companies mentioned, referred to, or described are not representative of all investments in vehicles managed by a16z, and there can be no assurance that the investments will be profitable or that other investments made in the future will have similar characteristics or results. A list of investments made by funds managed by Andreessen Horowitz (excluding investments for which the issuer has not provided permission for a16z to disclose publicly as well as unannounced investments in publicly traded digital assets) is available at [https://a16z.com/investments/](https://a16z.com/investments/).
-
-Charts and graphs provided within are for informational purposes solely and should not be relied upon when making any investment decision. Past performance is not indicative of future results. The content speaks only as of the date indicated. Any projections, estimates, forecasts, targets, prospects, and/or opinions expressed in these materials are subject to change without notice and may differ or be contrary to opinions expressed by others. Please see [https://a16z.com/disclosures](https://a16z.com/disclosures) for additional important information.
-
-#### Stay up to date on the latest from a16z Infra team
-
- for our a16z newsletter to get analysis and news covering the latest trends reshaping AI and infrastructure.
-
-#### Thanks for signing up.
-
-Check your inbox for a welcome note.
-
-[MANAGE MY SUBSCRIPTIONS](https://info.a16z.com/Manage-Subscription.html) By clicking the Subscribe button, you agree to the [Privacy Policy](https://a16z.com/terms-of-use-privacy/).
-
-**RECOMMENDED FOR YOU**
-
-*   **[AI Model Facts: Transparency that Works for Little Tech](https://a16z.com/ai-model-facts-transparency-that-works-for-little-tech/)** [Matt Perault](https://a16z.com/author/matt-perault/) [Read More](https://a16z.com/ai-model-facts-transparency-that-works-for-little-tech/)
-*   **[AI Avatars Escape the Uncanny Valley](https://a16z.com/ai-avatars/)** [Justine Moore](https://a16z.com/author/justine-moore/) [Read More](https://a16z.com/ai-avatars/)
-*   **[Building an Efficient GPU Server with NVIDIA GeForce RTX 4090s/5090s](https://a16z.com/building-an-efficient-gpu-server-with-nvidia-geforce-rtx-4090s-5090s/)** [Marco Mascorro](https://a16z.com/author/marco-mascorro/) [Read More](https://a16z.com/building-an-efficient-gpu-server-with-nvidia-geforce-rtx-4090s-5090s/)
-*   **[Shopping in 'God Mode' with AI](https://a16z.com/ai-shopping-online/)** [Daisy Zhao](https://a16z.com/author/daisy-zhao/) and [Bryan Kim](https://a16z.com/author/bryan-kim/) [Read More](https://a16z.com/ai-shopping-online/)
-*   **[A Policy Blueprint for US Investment in AI Talent and Infrastructure](https://a16z.com/a-policy-blueprint-for-us-investment-in-ai-talent-and-infrastructure/)** [Matt Perault](https://a16z.com/author/matt-perault/) [Read More](https://a16z.com/a-policy-blueprint-for-us-investment-in-ai-talent-and-infrastructure/)
-
-[go to top](#wrapper)
-
-[](/)
-
-Software is eating the world
-
-© 2025 Andreessen Horowitz
-
-*   [Terms of Use](https://a16z.com/terms-of-use/)
-*   [Conduct](https://a16z.com/conduct/)
-*   [Privacy Policy](https://a16z.com/privacy-policy/)
-*   [Disclosures](https://a16z.com/disclosures/)
-
-© 2025 Andreessen Horowitz
-
-*   
-*   
-*   
-*   
-*   
-
-[](#)**Power User Menu**
-
-*   [Home
-    
-    H
-    
-    ](https://a16z.com)
-
-By navigating this website you agree to our [cookie policy](https://a16z.com/terms-of-use-privacy/).
-
-*   [Accept](#)
-*   [Decline](#)
-
-/\* <!\[CDATA\[ \*/ var wp\_ajax = {"ajaxurl":"https:\\/\\/a16z.com\\/wp-admin\\/admin-ajax.php"}; /\* \]\]> \*/
