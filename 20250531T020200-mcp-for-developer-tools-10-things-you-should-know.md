@@ -5,7 +5,6 @@ date: 2025-05-31T02:02:00.212Z
 
 # MCP for Developer Tools: 10 Things You Should Know
 
-![A modern developer workspace with multiple screens showing code and AI tools, featuring sleek UI and holographic overlays in a clean, professional setting.](./images/image0.png)
 
 ## Introduction
 
