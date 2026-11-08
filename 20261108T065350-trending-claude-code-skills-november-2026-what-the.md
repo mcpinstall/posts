@@ -3,6 +3,8 @@ title: Trending Claude Code Skills (November 2026): What They Do
 date: 2026-11-08T06:53:50.241Z
 ---
 
+![Neon skill cards for design, knowledge graphs, memory and animation fanning out of a command-line terminal under a rising trend arrow, representing trending Claude Code skills in November 2026](https://www.mcpinstall.com/api/r2-image?fullpath=blog%2Ftrending-claude-code-skills-november-2026-hero.jpg)
+
 **The Claude Code skills people are searching for in November 2026 are ponytail (write less code), taste-skill, Uizze's UI Taste, impeccable and Emil Kowalski's skills (better-looking frontends), graphify (a knowledge graph of your codebase) and claude-mem (memory across sessions). Below is what each one does, how many installs it has, what its security audit says, and the one command to install it.**
 
 Google Trends shows searches for these names rising fast over the past three months: "ponytail skill" up 550% to 900%, "graphify claude" up 250% to 1,650%, "claude mem" up 170% to 850%, and "taste skill", "impeccable skill" and "emil kowalski design skill" each up around 200%. Searches for "claude skills" as a whole rose 22% over the same window. The install counts below come from the skills.sh registry, as mirrored in the mcpinstall directory on November 8, 2026.
