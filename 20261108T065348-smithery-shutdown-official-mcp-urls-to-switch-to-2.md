@@ -3,6 +3,8 @@ title: Smithery Shutdown: Official MCP URLs to Switch To (2026)
 date: 2026-11-08T06:53:48.369Z
 ---
 
+![A powered-off server with cut cables beside a laptop whose fiber-optic beams connect directly to six glowing service nodes, illustrating the switch from Smithery proxy URLs to official MCP server endpoints](https://www.mcpinstall.com/api/r2-image?fullpath=blog%2Fsmithery-shutdown-official-mcp-urls-hero.jpg)
+
 **Smithery shut down its hosted MCP connections on October 31, 2026. Any server URL on `server.smithery.ai` or `run.tools` has stopped working. To fix it, replace each Smithery URL with the vendor's official MCP endpoint. The table below lists 20 of them, each tested on November 8, 2026.**
 
 Smithery was acquired by Arcade.dev on August 5, 2026. Its co-founder posted the shutdown notice on [smithery.ai/future](https://www.smithery.ai/future): smithery.ai stays online as a public directory, but it no longer proxies connections. If your Claude Code, Cursor or Claude Desktop setup still points at a Smithery URL, those tools have been failing since November 1.
