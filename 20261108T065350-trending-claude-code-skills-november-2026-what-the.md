@@ -25,7 +25,7 @@ Google Trends shows searches for these names rising fast over the past three mon
 
 ## Four of the seven are about the same problem: AI-made UI looks generic
 
-The single clearest pattern in this list is that developers are tired of interfaces that look like every other AI-generated page. Four skills attack that from different angles.
+The single clearest pattern in this list is that developers are tired of interfaces that look like every other AI-generated page. Four skills attack that from different angles. For a wider comparison of design skills, with live install counts, audits and what each one runs, see our guide to the [best Claude skills for web design](https://www.mcpinstall.com/blog/best-claude-skills-for-web-design).
 
 ### Uizze UI Taste
 
@@ -185,7 +185,7 @@ ponytail is an open-source skill by dietrichgebert that makes the agent write th
 
 ### Which Claude Code skill is best for frontend design?
 
-It depends on the job. taste-skill and Uizze UI Taste set an art direction for new pages, impeccable is strongest at critique and polish of an existing UI, and Emil Kowalski's skills focus on animation and micro-interactions. Many developers combine one direction skill with one polish skill.
+It depends on the job. taste-skill and Uizze UI Taste set an art direction for new pages, impeccable is strongest at critique and polish of an existing UI, and Emil Kowalski's skills focus on animation and micro-interactions. Many developers combine one direction skill with one polish skill. Our [comparison of 11 Claude skills for web design](https://www.mcpinstall.com/blog/best-claude-skills-for-web-design) breaks this down by job.
 
 ### Are Claude Code skills safe to install?
 
