@@ -175,7 +175,7 @@ To try a skill without committing to it, install it in one project, use it for a
 
 ## Before you install: read the audit
 
-A skill is instructions plus, sometimes, scripts that your agent will follow with your permissions. Four of the seven skills here show Warn, in each case because one or two of the five scanners raised an alert while the others passed. Some also do things you should know about: impeccable downloads a binary, taste-skill can fetch images, claude-mem sends queries to its own service. That is fine for many projects and a problem for some. Each mcpinstall skill page shows the scanner summaries, so spend thirty seconds there before installing anything into a client codebase. Of the two November 12 additions, the gamedev pack is mostly audited (71 of 80 Pass) and none of the OmniRoute skills is.
+A skill is instructions plus, sometimes, scripts that your agent will follow with your permissions. Four of the seven skills here show Warn, in each case because one or two of the five scanners raised an alert while the others passed. Some also do things you should know about: impeccable downloads a binary, taste-skill can fetch images, claude-mem sends queries to its own service. That is fine for many projects and a problem for some. Each mcpinstall skill page shows the scanner summaries, so spend thirty seconds there before installing anything into a client codebase. Our [analysis of 4,936 agent skill audits](https://www.mcpinstall.com/blog/agent-skills-security) shows which SKILL.md lines trigger a Fail and how to install a skill without trusting it blindly. Of the two November 12 additions, the gamedev pack is mostly audited (71 of 80 Pass) and none of the OmniRoute skills is.
 
 ## FAQ
 
