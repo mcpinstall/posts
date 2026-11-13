@@ -134,7 +134,7 @@ It means the server is online and needs you to authenticate. Clients like Claude
 
 ### Where can I find MCP servers now that Smithery's hosting is gone?
 
-Directories still list them; you just connect directly. [mcpinstall.com](https://www.mcpinstall.com/browse) indexes more than 23,000 MCP servers with links to each repository, and our guide on [how to use MCP](https://www.mcpinstall.com/blog/how-to-use-mcp) covers adding a server to your client.
+Directories still list them; you just connect directly. [mcpinstall.com](https://www.mcpinstall.com/browse) indexes more than 23,000 MCP servers with links to each repository, and our guide on [how to use MCP](https://www.mcpinstall.com/blog/how-to-use-mcp) covers adding a server to your client. If you are comparing directories, our count of [how many MCP servers there are](https://www.mcpinstall.com/blog/how-many-mcp-servers) explains why their totals range from about 20,000 to 121,000.
 
 ---
 
