@@ -17,7 +17,7 @@ We compared 11 design skills from the MCPInstall directory's [frontend and desig
 | [design-taste-frontend](https://www.mcpinstall.com/skills/leonxlnx/taste-skill/design-taste-frontend) | taste-skill | 772,371 | 34,196 | Art-directed landing and marketing pages | Node 22 scripts plus a local Chrome inspector | Snyk medium (1 issue), Socket warning, Runlayer low |
 | [ui-ux-pro-max](https://www.mcpinstall.com/skills/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max) | nextlevelbuilder | 449,750 | 12,691 | Picking a style, palette and font pairing | A Python search script over bundled CSV data | ZeroLeaks low (1 finding) |
 | [emil-design-eng](https://www.mcpinstall.com/skills/emilkowalski/skills/emil-design-eng) | Emil Kowalski | 444,763 | 20,798 | Animation decisions and UI polish | Nothing: 674 lines of instructions | 3 of 3 clean |
-| [impeccable](https://www.mcpinstall.com/skills/pbakaus/impeccable/impeccable) | Paul Bakaus | 405,604 | 15,779 | Redesigning, critiquing and polishing existing UI | A bundled launcher script; 60 files | Socket warning |
+| [impeccable](https://www.mcpinstall.com/skills/pbakaus/impeccable/impeccable) | Paul Bakaus | 405,604 | 15,779 | Redesigning, critiquing and polishing existing UI | A launcher that downloads a checksum-verified helper binary | Socket warning |
 | [uizze-ui](https://www.mcpinstall.com/skills/uizze/uizze/uizze-ui) | Uizze | 367,467 | 96,498 | Building UI with real-product references | Nothing; uses the Uizze MCP if connected (paid) | 3 of 3 clean |
 | [apple-design](https://www.mcpinstall.com/skills/emilkowalski/skills/apple-design) | Emil Kowalski | 296,841 | 18,972 | Gestures, springs and fluid motion | Nothing: instructions | 3 of 3 clean |
 | [shadcn](https://www.mcpinstall.com/skills/shadcn-ui/ui/shadcn) | shadcn/ui | 146,947 | 8,436 | Building with shadcn/ui components | `npx shadcn@latest` | Socket warning |
@@ -35,7 +35,7 @@ Installs are skills.sh counts read on November 13, 2026; "last week" is the most
 
 ## Which skill fixes a site that already looks AI-made?
 
-**impeccable** (version 4.7.0) is built for this: design, redesign, critique, audit, polish, simplify, harden or animate an existing interface, including native iOS and Android screens. It scales ambition to the page's mode, bold on marketing and experience pages, restrained on screens people operate or read. It runs a bundled launcher script once per session to load project context, and ships 60 files of playbooks and sub-agents.
+**impeccable** (version 4.7.0) is built for this: design, redesign, critique, audit, polish, simplify, harden or animate an existing interface, including native iOS and Android screens. It scales ambition to the page's mode, bold on marketing and experience pages, restrained on screens people operate or read. It runs a bundled launcher once per session to load project context. The launcher downloads a helper binary, impeccable-engine, from the author's GitHub and checks it against SHA-256 checksums shipped with the skill, as Gen Agent Trust Hub's audit (October 20, 2026) also notes. The skill ships 60 files of playbooks, browser scripts and sub-agents.
 
 **UI Taste by Uizze** targets the same "AI slop" problem with less machinery: the free skill works "without an account, token, MCP connection, dependency, script, or executable", per its SKILL.md. It had the most installs of any skill in this list last week (161,684). It is new enough that none of the five scanners in our directory has audited it yet. Uizze's paid MCP adds real-product references, and its sibling **uizze-ui** leans on that MCP more directly.
 
@@ -55,7 +55,7 @@ Because skills get retired and renamed while their counters keep growing. taste-
 
 ## What should you check before installing a design skill?
 
-- **What it runs.** Six of the eleven are instructions only. Three run bundled scripts (Node, Python or a launcher), one fetches its rules at run time, and the shadcn skill is allowed to run `npx shadcn@latest`, which pulls the newest CLI release each time.
+- **What it runs.** Six of the eleven are instructions only. Three run bundled code (Node scripts, a Python script, or a launcher that downloads a checksum-verified binary), one fetches its rules at run time, and the shadcn skill is allowed to run `npx shadcn@latest`, which pulls the newest CLI release each time.
 - **Its audits, and their dates.** Our skill pages show each scanner's verdict with the date it ran. A warning is a reason to read the flagged file, not an automatic no. Our analysis of [4,936 agent skill audits](https://www.mcpinstall.com/blog/agent-skills-security) explains what each scanner looks for.
 - **Whether it fights your design system.** Opinionated skills such as design-taste-frontend impose a house style. If you already have tokens and components, a review skill or impeccable's polish mode will respect them more.
 
