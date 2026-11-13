@@ -80,7 +80,7 @@ About `allowed-tools`: the [Agent Skills specification](https://agentskills.io/s
 
 ## How do you install a skill without trusting it blindly?
 
-**Read it first, install it into one project, and pin what you installed.** The steps below use the open `skills` CLI ([vercel-labs/skills](https://github.com/vercel-labs/skills), which needs Node.js 22.20 or later) and Claude Code's own folders. I checked the commands against the CLI's README and the Claude Code docs on 2026-11-13.
+**Read it first, install it into one project, and pin what you installed.** The steps below use the open `skills` CLI ([vercel-labs/skills](https://github.com/vercel-labs/skills), which needs Node.js 22.20 or later) and Claude Code's own folders. I checked the commands against the CLI's README and the Claude Code docs on 2026-11-13. MCP servers have the same problem one layer down: a server pinned to an exact version can still pull new dependencies whenever its environment is rebuilt, as our [MCP server supply chain analysis](https://www.mcpinstall.com/blog/mcp-server-supply-chain-security) of 63,501 Registry servers shows.
 
 | Step | What to do | Command or place |
 |---|---|---|
