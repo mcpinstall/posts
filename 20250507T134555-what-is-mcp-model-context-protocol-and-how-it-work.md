@@ -337,7 +337,7 @@ The MCP ecosystem has expanded rapidly since the protocol's introduction:
 -   Enterprise solutions are incorporating MCP for internal tool access
     
 
-This growth has created a need for structured organization and discovery mechanisms.
+This growth has created a need for structured organization and discovery mechanisms. For current figures (the official MCP Registry alone listed 62,695 servers on November 12, 2026), see [how many MCP servers there are](https://www.mcpinstall.com/blog/how-many-mcp-servers).
 
 ![MCP Directory](https://miro.medium.com/v2/resize:fit:1400/0*pNgj28sYKim3QbEI.jpeg)
 
